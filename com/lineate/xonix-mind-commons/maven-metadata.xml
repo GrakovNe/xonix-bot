@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.lineate.xonix.mind</groupId>
-  <artifactId>lineate-xonix-mind-commons</artifactId>
+  <groupId>com.lineate</groupId>
+  <artifactId>xonix-mind-commons</artifactId>
   <versioning>
     <release>1.0.1</release>
     <versions>
       <version>1.0.1</version>
     </versions>
-    <lastUpdated>20180505080819</lastUpdated>
+    <lastUpdated>20180506124003</lastUpdated>
   </versioning>
 </metadata>
