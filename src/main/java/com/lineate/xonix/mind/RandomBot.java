@@ -3,9 +3,7 @@ package com.lineate.xonix.mind;
 import com.lineate.xonix.mind.model.Bot;
 import com.lineate.xonix.mind.model.GameStateView;
 import com.lineate.xonix.mind.model.Move;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.lineate.xonix.mind.strategies.RandomStrategy;
 
 /**
  * Hello world!

@@ -1,5 +1,6 @@
-package com.lineate.xonix.mind;
+package com.lineate.xonix.mind.strategies;
 
+import com.lineate.xonix.mind.Strategy;
 import com.lineate.xonix.mind.model.GameStateView;
 import com.lineate.xonix.mind.model.Move;
 
