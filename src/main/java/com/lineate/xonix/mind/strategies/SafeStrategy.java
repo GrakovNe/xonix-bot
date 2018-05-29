@@ -14,6 +14,21 @@ public class SafeStrategy implements Strategy {
             return lastMove;
         }
 
+        // left side
+        if (view.head.getRow() == 0) {
+            switch (lastMove) {
+                case DOWN:
+                    return Move.RIGHT;
+                case RIGHT:
+                    return Move.UP;
+                case UP:
+                    return Move.LEFT;
+                case LEFT:
+                    return Move.DOWN;
+            }
+        }
+
+        // right side
         switch (lastMove) {
             case DOWN:
                 return Move.LEFT;
