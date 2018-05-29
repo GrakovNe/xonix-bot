@@ -6,7 +6,9 @@ import com.lineate.xonix.mind.strategies.RandomStrategy;
 
 public class StrategySelector {
 
+    static RandomStrategy strategy = new RandomStrategy();
+
     public static Strategy select(GameStateView view, Move lastMove, Strategy lastStrategy) {
-        return new RandomStrategy();
+        return strategy;
     }
 }
