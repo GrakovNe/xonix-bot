@@ -10,6 +10,9 @@ import java.util.Random;
 
 public class RandomStrategy implements Strategy {
 
+
+    int i = 0;
+
     private final List<Move> whenVertical = Arrays.asList(Move.LEFT, Move.RIGHT);
     private final List<Move> whenHorizontal = Arrays.asList(Move.UP, Move.DOWN);
 
@@ -17,6 +20,11 @@ public class RandomStrategy implements Strategy {
     public Move resolve(GameStateView view, Move lastMove) {
 
         Random random = new Random();
+
+        i++;
+        if (i % 2 == 0) {
+            return lastMove;
+        }
 
         switch (lastMove) {
             case UP:

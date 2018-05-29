@@ -26,7 +26,6 @@ public class RandomBot implements Bot {
     public Move move(GameStateView view) {
 
         Strategy strategy = StrategySelector.select(view, lastMove, lastStrategy);
-
         Move result = strategy.resolve(view, lastMove);
 
         lastMove = result;
