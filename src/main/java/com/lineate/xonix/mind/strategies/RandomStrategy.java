@@ -8,6 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+import static java.lang.Integer.min;
+
 public class RandomStrategy implements Strategy {
 
 
@@ -21,8 +23,11 @@ public class RandomStrategy implements Strategy {
 
         Random random = new Random();
 
+        int x = view.field.length;
+        int y = view.field[0].length;
+
         i++;
-        if (i % 2 == 0) {
+        if (i % min(x, y) == 0) {
             return lastMove;
         }
 
