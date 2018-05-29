@@ -2,11 +2,11 @@ package com.lineate.xonix.mind;
 
 import com.lineate.xonix.mind.model.GameStateView;
 import com.lineate.xonix.mind.model.Move;
-import com.lineate.xonix.mind.strategies.SafeStrategy;
+import com.lineate.xonix.mind.strategies.FillingStrategy;
 
 public class StrategySelector {
 
     public static Strategy select(GameStateView view, Move lastMove, Strategy lastStrategy) {
-        return new SafeStrategy();
+        return new FillingStrategy();
     }
 }

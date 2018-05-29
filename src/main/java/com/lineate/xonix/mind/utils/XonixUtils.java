@@ -1,7 +1,6 @@
 package com.lineate.xonix.mind.utils;
 
 import com.lineate.xonix.mind.model.GameStateView;
-import com.lineate.xonix.mind.model.Move;
 
 public class XonixUtils {
 
